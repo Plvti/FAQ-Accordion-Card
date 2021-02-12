@@ -5,9 +5,15 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
+.box {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  transform: translate(-49%, 0);
+  display: block;
+}
 .glowna {
-  border: 1px solid;
+  border: 0px solid;
   border-radius: 8px;
   border-color: white;
   width: 900px;
@@ -17,13 +23,14 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
   background-color: white;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .obrazki {
   position: relative;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
 .patternik {
@@ -37,7 +44,7 @@ body {
   position: absolute;
   top: 50px;
   left: 0;
-  transform: translate(-10%, 0);
+  transform: translate(-13%, 0);
 }
 
 :root {
