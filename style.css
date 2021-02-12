@@ -5,7 +5,13 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
+.box {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  transform: translate(-49%, 0);
+  display: block;
+}
 .glowna {
   border: 0px solid;
   border-radius: 8px;
@@ -28,11 +34,45 @@ body {
   left: 0;
   overflow: hidden;
 }
-
+div.dziecko {
+  transition: 0.3s;
+}
+/* div.dziecko > span {
+  position: ab;
+} */
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  height: 0px;
+  /* display: none; */
+}
+.hidden > span {
+  height: 0px;
+}
+.shown {
+  opacity: 1;
+  visibility: visible;
+  /* display: block; */
+}
+button {
+  transition: 0.3s;
+}
+button:hover {
+  transform: rotate(360deg);
+}
+button.check {
+  background: url(./images/icon-arrow-down.svg) no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  right: 0px;
+  position: absolute;
+}
 .patternik {
   position: relative;
   width: 80%;
-  height: 80%;
+  /* height: 80%; */
   transform: translate(-40%, -20%);
 }
 
@@ -58,13 +98,19 @@ body {
   font-weight: bold;
   font-size: 2em;
 }
-
+.tekst.tabela {
+  display: grid;
+}
+.tekst.header {
+  border-bottom: 1px solid var(--lightGrayishBlue);
+  font-weight: bold;
+}
 .tekst {
   font-family: "Kumbh Sans", sans-serif;
   right: 0;
   top: 0;
-  display: grid;
-  border-bottom: 1px solid var(--lightGrayishBlue);
+
+  /* border-bottom: 1px solid var(--lightGrayishBlue); */
   line-height: 1.5em;
   padding-top: 1.5em;
 }
