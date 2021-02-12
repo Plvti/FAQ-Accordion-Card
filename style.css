@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+body {
+  background: linear-gradient(var(--softViolet), var(--softBlue));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.glowna {
+  border: 1px solid;
+  border-radius: 8px;
+  border-color: white;
+  width: 900px;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  overflow: hidden;
+}
+
+.obrazki {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.patternik {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  transform: translate(-40%, -20%);
+}
+
+.desktop {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  transform: translate(-10%, 0);
+}
+
+:root {
+  --veryDarkDesaturatedBlue: hsl(238, 29%, 16%); /* Text */
+  --softRed: hsl(14, 88%, 65%); /* Text */
+  --veryDarkGrayishBlue: hsl(237, 12%, 33%); /* Text */
+  --darkGrayishBlue: hsl(240, 6%, 50%); /* Text */
+  --lightGrayishBlue: hsl(240, 5%, 91%); /* Divider */
+  --softViolet: hsl(273, 75%, 66%); /* Gradient */
+  --softBlue: hsl(240, 73%, 65%); /* Gradient */
+}
